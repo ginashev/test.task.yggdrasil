@@ -1,11 +1,14 @@
 package testrunner;
 
-import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
+        strict = true,
+        stepNotifications = true,
         features = "src/test/java/resources/features",
         glue = {"stepdefs"},
         tags = "@smoketest",

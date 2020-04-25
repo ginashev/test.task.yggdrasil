@@ -1,6 +1,6 @@
 @smoketest
-Feature: investigating communication between frontend client and backend server
+Feature: Investigating communication between frontend client and backend server
 
-  Scenario: Add Employee record
+  Scenario: Play with anonymous player to win money
     Given Logs in into system as anonymous player
-    Then  send spin request until user win any money
+    Then  send spin request until player win any money

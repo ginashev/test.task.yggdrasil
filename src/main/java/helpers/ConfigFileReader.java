@@ -38,6 +38,6 @@ public class ConfigFileReader {
         String driverPath = properties.getProperty("protocol");
         if (driverPath != null) return driverPath;
         else
-            throw new RuntimeException("Host name not specified in the Configuration.properties");
+            throw new RuntimeException("Protocol name not specified in the Configuration.properties");
     }
 }
