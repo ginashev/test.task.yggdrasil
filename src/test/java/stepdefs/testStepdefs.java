@@ -18,7 +18,7 @@ public class testStepdefs {
 
     @Given("^Logs in into system as anonymous player$")
     public void logsInIntoSystemAsAnonymousPlayer() {
-        JsonPath getSessionId = common.getJsonPathFromRequest(parameters.getLoginParameters());
+        JsonPath getSessionId = common.getJsonPathFromRequest(parameters.getLoginParametersForAnonymousPlayer());
         sessId = getSessionId.getString("data.sessid");
         log.info("sessid = " + sessId);
     }

@@ -6,7 +6,7 @@ import java.util.Map;
 import static enums.ParametersType.*;
 
 public class Parameters {
-    public Map<String, String> getLoginParameters() {
+    public Map<String, String> getLoginParametersForAnonymousPlayer() {
         Map<String, String> params = new HashMap<String, String>();
         params.put(FN.getValue(), "authenticate");
         params.put(ORG.getValue(), "Demo");
